@@ -1,0 +1,46 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "mant_tipo_id": "6",
+      "actividad_tipo_id": "MTTO_PIMP",
+      "mant_act_id": "31",
+      "created_at": null,
+      "updated_at": null,
+      "mant_tipo_descripcion": "M.PREDICTIVO"
+    },
+    {
+      "mant_tipo_id": "7",
+      "actividad_tipo_id": "MTTO_PIMP",
+      "mant_act_id": "32",
+      "created_at": null,
+      "updated_at": null,
+      "mant_tipo_descripcion": "M.PREVENTIVO_LD"
+    },
+    {
+      "mant_tipo_id": "8",
+      "actividad_tipo_id": "MTTO_PIMP",
+      "mant_act_id": "33",
+      "created_at": null,
+      "updated_at": null,
+      "mant_tipo_descripcion": "M.PREVENTIVO_LV"
+    },
+    {
+      "mant_tipo_id": "10",
+      "actividad_tipo_id": "MTTO_PIMP",
+      "mant_act_id": "34",
+      "created_at": null,
+      "updated_at": null,
+      "mant_tipo_descripcion": "M.PREVENTIVO_OPORTUN_LD"
+    },
+    {
+      "mant_tipo_id": "9",
+      "actividad_tipo_id": "MTTO_PIMP",
+      "mant_act_id": "35",
+      "created_at": null,
+      "updated_at": null,
+      "mant_tipo_descripcion": "M.PREVENTIVO_TRMS_LD"
+    }
+  ],
+  "message": "Registros consultados..."
+}
