@@ -3,31 +3,31 @@ import { searchMantenimientoTipo } from '../services/MantenimientoTipo';
 
 export function useMantenimientoTipo({ search }) {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isData, setIsData] = useState(false);
 
   const [error, setError] = useState(null);
   const previousSearch = useRef(search);
 
   const getMantenimientoTipo = async ({ search }) => {
-    console.log('getMantenimientoTipo search: ', search);
     //if (search === previousSearch.current) return;
-    console.log('previousSearch.current: ', previousSearch.current);
+    console.log('previousSearch.current: ', previousSearch.current, search);
 
     try {
-      setLoading(true);
+      setIsLoading(true);
       setError(null);
       previousSearch.current = search;
 
       const result = await searchMantenimientoTipo({ query: search });
-      console.log('result: ', result);
 
       setData(result);
+      setIsData(result.length > 0);
     } catch (e) {
       setError(e.message);
     } finally {
-      setLoading(false);
+      setIsLoading(false);
     }
   };
 
-  return { data, getMantenimientoTipo, loading, error };
+  return { data, getMantenimientoTipo, isLoading, error, isData };
 }

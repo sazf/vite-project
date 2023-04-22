@@ -1,0 +1,36 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "actividad_tipo_id": "MTTO_N.PIMP",
+      "actividad_tipo_descripcion": "MTTO_N.PIMP",
+      "updated_at": null,
+      "created_at": null
+    },
+    {
+      "actividad_tipo_id": "MTTO_PERDIDAS",
+      "actividad_tipo_descripcion": "MTTO_PERDIDAS",
+      "updated_at": null,
+      "created_at": null
+    },
+    {
+      "actividad_tipo_id": "MTTO_PIMP",
+      "actividad_tipo_descripcion": "MTTO_PIMP",
+      "updated_at": null,
+      "created_at": null
+    },
+    {
+      "actividad_tipo_id": "OT",
+      "actividad_tipo_descripcion": "OT",
+      "updated_at": null,
+      "created_at": null
+    },
+    {
+      "actividad_tipo_id": "P.INV",
+      "actividad_tipo_descripcion": "P.INV",
+      "updated_at": null,
+      "created_at": null
+    }
+  ],
+  "message": "Registros consultados..."
+}
