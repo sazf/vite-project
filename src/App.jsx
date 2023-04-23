@@ -1,13 +1,13 @@
-import response from './mocs/mantenimientoTipo.json';
 import './App.css';
 
 import { useMantenimientoTipo } from './hooks/useMantenimientoTipo';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
   const [search, setSearch] = useState('');
 
   const { data, getMantenimientoTipo, isLoading, isData } = useMantenimientoTipo({ search });
+  console.log('data: ', data);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,6 +17,10 @@ function App() {
   const handleSearchChange = (e) => {
     setSearch(e.target.value);
   };
+
+  useEffect(() => {
+    console.log('useEffect: getMantenimientoTipo', search);
+  }, [getMantenimientoTipo]);
 
   return (
     <div className='page'>
